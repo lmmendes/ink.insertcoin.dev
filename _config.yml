@@ -29,7 +29,7 @@ twitter_username: lmmendes
 github_username:  lmmendes
 
 # Build settings
-theme: no-style-please
+# theme: no-style-please
 plugins:
   - jekyll-feed
   - jekyll-sitemap
