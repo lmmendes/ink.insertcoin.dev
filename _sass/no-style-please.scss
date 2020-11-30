@@ -46,10 +46,26 @@ li { margin: 0.4rem 0; }
 
 .w {
   width: fit-content;
-  max-width: 640px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
+
+@media screen and (min-width: 1024px) {
+    .w {
+        width:800px;
+    }
+
+    header {
+        width:800px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    img {
+        max-width: 90%;
+    }
+}
+
 
 hr {
   text-align: center;
@@ -90,3 +106,10 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+section.posts > article > h2 {
+  font-size: 30px;
+  display: inline;
+  margin-bottom: 20px;
+}
+section.posts > article > h2 > a { text-decoration: none; }

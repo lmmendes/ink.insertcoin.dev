@@ -27,6 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ink.insertcoin.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lmmendes
 github_username:  lmmendes
+excerpt_separator: "<!--more-->"
 
 # Build settings
 # theme: no-style-please
@@ -39,10 +40,10 @@ permalink: /news/:slug
 
 # no-style-please theme config
 theme_config:
-  appearance: "auto" # can be "light", "dark" or "auto"
+  appearance: "light" # can be "light", "dark" or "auto"
   back_home_text: ".." # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: false # show blog description in home page
+  show_description: true # show blog description in home page
 
 # Exclude from processing.
 # The following items will not be processed, by default.
