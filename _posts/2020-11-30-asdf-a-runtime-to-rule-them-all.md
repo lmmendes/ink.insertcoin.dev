@@ -7,6 +7,10 @@ categories:
     - asdf
 paginate:
     enabled: true
+last_modified_at: "2020-12-01T00:00:00+00:00"
+changelog:
+  - date: "2020-12-01T00:00:00+00:00"
+    message: Fix typos
 ---
 [asdf]: https://github.com/asdf-vm/asdf
 [asdf-plugins]: https://asdf-vm.com/#/plugins-all?id=plugin-list
@@ -17,11 +21,11 @@ paginate:
 [asdf-plugins]: https://github.com/asdf-vm/asdf-plugins
 [tool-versions]: https://asdf-vm.com/#/core-configuration
 
-Currently I'm running multiple versions of multiple runtimes on my machine, eg: OpenJDK 8, 14 then ruby 2.7.0 and nodejs verions 8 and 12.
+Currently I'm running multiple versions of multiple runtimes on my machine, eg: OpenJDK 8, 14 then ruby 2.7.0 and NodeJS versions 8 and 12.
 
-Normaly for each one of them I would use a specific runtime version manager, for example for Java I would use [sdkman][sdkman], for ruby a couple years ago I replaced [rvm][rvm] with [rbenv][rbenv] and for NodeJS I simply went with [nvm][nvm].
+Normally for each one of them I would use a specific runtime version manager, for example for Java I would use [sdkman][sdkman], for ruby a couple years ago I replaced [rvm][rvm] with [rbenv][rbenv] and for NodeJS I simply went with [nvm][nvm].
 
-The main pain of using 3 runtime managers is the need to learn their diferent CLIs and nuances; With [rvm][rvm] and [rbenv][rbenv] you can choose a version of ruby per project by placing in the root of the folder a `.ruby-version` file stating the version to use, [nvm][nvm] also allowed this using `.nvmrc` and so on, but now this is water under the bridge.
+The main pain of using 3 runtime managers is the need to learn their different CLIs and nuances; With [rvm][rvm] and [rbenv][rbenv] you can choose a version of ruby per project by placing in the root of the folder a `.ruby-version` file stating the version to use, [nvm][nvm] also allowed this using `.nvmrc` and so on, but now this is water under the bridge.
 
 <!--more-->
 
@@ -191,7 +195,7 @@ asdf local <name> <version>
 | shell | sets the version just for this shell, but setting `ASDF_${LANG}_VERSION` environment variable |
 | local | writes the version to the file `.tools_versions` on the current working directory |
 
-You can read more about the [.tool-versions][tool-versions] file [here][tools-versions
+You can read more about the [.tool-versions][tool-versions] file [here][tool-versions].
 
 
 ### View current version
