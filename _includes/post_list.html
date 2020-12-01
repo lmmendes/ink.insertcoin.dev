@@ -15,8 +15,9 @@
     {%- for post in posts limit: include.limit -%}
         <article pubdate="{{- post.date | date: site.theme_config.date_format -}}">
           <h2 itemprop="headline">
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-          <small>Reading time {% include reading-time.html content=post.content %}</small>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h2>
+          <small class="readtime">{% include reading-time.html content=post.content %}</small>
           <section>
             {{ post.excerpt }}
           </section>

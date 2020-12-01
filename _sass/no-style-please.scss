@@ -112,9 +112,29 @@ section.posts {
 }
 section.posts > article > h2 {
   color: #000;
-  font-size: 30px;
+  font-size: 2rem;
   display: inline;
-  margin-bottom: 20px;
 }
-section.posts > article > h2 > a { text-decoration: none; color: #000; }
-section.posts > article > h2 > a:visited { color: #000; }
+section.posts > article > h2 > a {
+  text-decoration: none;
+  color: #000;
+  &:visited {
+    color: #000;
+  }
+}
+section.posts > article > .readtime {
+  display: block;
+  margin-top: 10px;
+}
+
+section.posts > article > .readmore {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+ section.posts > article > .readmore> a {
+  color: #000;
+  &:visited {
+    color: #000;
+  }
+}
