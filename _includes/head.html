@@ -17,7 +17,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}" />
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
 
-  {% if site.google_analytics and jekyll.environment == "production" %}
+  {%- if site.google_analytics and jekyll.environment == "production" -%}
     {% include google_analytics.html %}
-  {% endif %}
+  {%- endif -%}
 </head>

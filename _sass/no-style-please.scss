@@ -111,8 +111,10 @@ section.posts {
   margin-top: 10px;
 }
 section.posts > article > h2 {
+  color: #000;
   font-size: 30px;
   display: inline;
   margin-bottom: 20px;
 }
-section.posts > article > h2 > a { text-decoration: none; }
+section.posts > article > h2 > a { text-decoration: none; color: #000; }
+section.posts > article > h2 > a:visited { color: #000; }
