@@ -27,6 +27,7 @@ A couple of days ago I found a news in [Hacker News][hn-docker-deprecation] with
 
 Let's talk a bit about Docker and the container eco-system evolution to understand how we got here.
 
+<!--more-->
 
 ## Understanding Docker
 
