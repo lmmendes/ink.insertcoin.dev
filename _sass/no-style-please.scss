@@ -110,11 +110,17 @@ img {
 section.posts {
   margin-top: 10px;
 }
+
+section.posts > article {
+  margin-bottom: 3rem;
+}
+
 section.posts > article > h2 {
   color: #000;
   font-size: 2rem;
   display: inline;
 }
+
 section.posts > article > h2 > a {
   text-decoration: none;
   color: #000;
@@ -122,6 +128,7 @@ section.posts > article > h2 > a {
     color: #000;
   }
 }
+
 section.posts > article > .readtime {
   display: block;
   margin-top: 10px;
@@ -137,4 +144,7 @@ section.posts > article > .readmore {
   &:visited {
     color: #000;
   }
+}
+.comments {
+    margin-top: 1rem;
 }
