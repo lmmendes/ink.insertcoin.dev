@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  asdf a runtime manager to rule them all
+pageId: asdf-a-runtime-manager-to-rule-them-all
 categories:
     - version manager
     - runtime manager
