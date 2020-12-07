@@ -8,7 +8,10 @@ tags:
     - docker
     - kubernetes
 comments: true
-last_modified_at: "2020-12-06T23:24:00+00:00"
+last_modified_at: "2020-12-07T15:00:00+00:00"
+changelog:
+  - date: "2020-12-07T15:00:00+00:00"
+    message: Added throughs about docker still being a useful tool for developers.
 ---
 [hn-docker-deprecation]: https://news.ycombinator.com/item?id=25279924
 [oci]: https://www.opencontainers.org
@@ -22,6 +25,9 @@ last_modified_at: "2020-12-06T23:24:00+00:00"
 [grpc]: http://www.grpc.io
 [kubelet]: https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet
 [cri-o]: https://github.com/cri-o/cri-o
+[eks-cri-support]: https://github.com/aws/containers-roadmap/issues/313
+[aks-cri-support]: https://github.com/Azure/AKS/releases/tag/2020-11-16
+[gke-cri-support]: https://cloud.google.com/kubernetes-engine/docs/concepts/using-containerd
 
 A couple of days ago I found a news in [Hacker News][hn-docker-deprecation] with the title [Kubernetes is deprecating Docker runtime support][hn-docker-deprecation] that made me think a bit about the impact of this news, both in terms to Kubernetes and for Docker, since Docker popularized the container technology, could this be the end of Docker?
 
@@ -110,6 +116,14 @@ When we look at the kubelet flow when using containerd 1.1+ we can see that the 
 
 As you can see maintaining the dockershim brings a lot of pain to the Kubenetes team, they need to manage another component just to keep supporting Docker (tracking deprecations, api changes, etc) and at the end of the day Docker is not special and it should expose a CRI interface just like other container runtimes ([containerd][containerd], [cri-o][cri-o]).
 
+
+So in order to continue using Docker for Kubernetes deployments in the future, the Docker client or daemon will need to become CRI compliant meanwhile everyone should start planning to transition to a CRI compatible runtime like containerd for example.
+
+Some managed Kubernetes services like [AKS][aks-cri-support] or [GKE][gke-cri-support] already are supporting CRI runtimes others like [EKS][eks-cri-support] are still working supporting it.
+
+Don't forget to check if the container tools that you are using also support CRI runtimes and don't just expect to find Docker.
+
+In a last note this doesn't mean that you for local development should stop using Docker, right now the docker platform in my understanding still gives to developers the best user experience and a huge step to tools that simply make our life easier (eg: docker-compose).
 
 Here are some articles that try to explain a bit more in detail the reasons under the what will this entail for Kubernetes and it's users:
 - [Don't Panic: Kubernetes and Docker](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/)
