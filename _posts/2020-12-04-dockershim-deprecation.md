@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Deprecation of Dockershim
 pageId: 2
+title:  Deprecation of Dockershim
+comments: true
 categories:
     - kubernetes
 tags:
     - docker
     - kubernetes
-comments: true
 last_modified_at: "2020-12-07T15:00:00+00:00"
 changelog:
   - date: "2020-12-07T15:00:00+00:00"
