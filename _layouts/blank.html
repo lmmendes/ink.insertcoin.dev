@@ -6,13 +6,10 @@
   <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="/assets/css/main.css">
-  {% feed_meta %}
-  {% include head.html %}
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
   <div class="container">
-    <h1><a href="./">{{ site.title }}</a></h1>
     {{ content }}
   </div>
 {% include footer.html %}

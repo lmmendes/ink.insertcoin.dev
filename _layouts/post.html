@@ -1,18 +1,32 @@
----
-layout: default
----
-
-{% include back_link.html %}
-
-<section>
-  <article class="post">
-    <p class="post-meta">
-      <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
-    </p>
-    <h1>{{ page.title }}</h1>
-    {{ content }}
-  </article>
-  <section class="comments">
-    {% include disqus.html %}
-  </section>
-</section>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  {% include head.html %}
+</head>
+<body>
+  <div class="container">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+        <p class="post-meta"> <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          {% include back_link.html %} <a href="/"><span itemprop="name">{{ page.author }}</span></a></span> • <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time> • 🕘 {% include reading-time.html content=page.content %}
+        </p>
+      </header>
+      <div class="post-content" itemprop="articleBody">
+        {{ content }}
+      </div>
+    </article>
+    <section class="comments">
+      <h2 id="comments">Comments</h2>
+      {% include disqus.html %}
+    </section>
+  </div>
+</body>
+{% include footer.html %}
+</html>
