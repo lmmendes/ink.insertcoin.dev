@@ -37,8 +37,9 @@ layout: default
        other interests:
        <ul>
           <li><a href="https://www.goodreads.com/lmmendes">reading</a></li>
-          <li>algorithms and data structures</li>
           <li>emuladors</li>
+          <li>retro computing</li>
+          <li>algorithms and data structures</li>
        </ul>
     </li>
  </ul>
