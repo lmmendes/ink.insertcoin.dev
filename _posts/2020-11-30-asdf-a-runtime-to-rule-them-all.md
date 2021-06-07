@@ -13,6 +13,7 @@ last_modified_at: "2020-12-01T00:00:00+00:00"
 changelog:
   - date: "2020-12-01T00:00:00+00:00"
     message: Fix typos
+author: Luis Mendes    
 ---
 [asdf]: https://github.com/asdf-vm/asdf
 [asdf-plugins]: https://asdf-vm.com/#/plugins-all?id=plugin-list

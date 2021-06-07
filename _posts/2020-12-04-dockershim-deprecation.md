@@ -12,6 +12,7 @@ last_modified_at: "2020-12-07T15:00:00+00:00"
 changelog:
   - date: "2020-12-07T15:00:00+00:00"
     message: Added throughs about docker still being a useful tool for developers.
+author: Luis Mendes
 ---
 [hn-docker-deprecation]: https://news.ycombinator.com/item?id=25279924
 [oci]: https://www.opencontainers.org

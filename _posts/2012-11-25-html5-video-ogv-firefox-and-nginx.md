@@ -11,6 +11,7 @@ tags:
   - nginx
   - html video
   - ogv
+author: Luis Mendes
 ---
 If you are having problems serving `ogv` video content on Firefox there are some steps that you should follow.
 
