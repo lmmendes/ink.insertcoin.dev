@@ -5,7 +5,7 @@
 [jekyll]: https://jekyllrb.com/
 [issues]: https://github.com/lmmendes/ink.insertcoin.dev/issues
 
-A materialization of random thoughts in a [blog][blog] form.
+A materialization of random thoughts in a [blog][blog] form at https://ink.insertcoin.dev
 
 This blog runs on [jekyll][jekyll] and is published using [GitHub Pages][github-pages].
 
