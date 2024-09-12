@@ -130,29 +130,28 @@ For completeness, the `Answer`, `Authority` and `Additional` sections have the s
 
 [RFC 1035](https://www.rfc-editor.org/rfc/rfc1035) describes 21 record types, but we are going to focus on implementing the A record for simplicity.
 
-| Record Type | Value | Description                                                                          |
-| ----------- | ----- | ------------------------------------------------------------------------------------ |
-| A           | 1     | Address record. Maps a domain name to an IPv4 address.                               |
-| NS          | 2     | Name server record. Specifies the authoritative name servers for a domain.           |
-| MD          | 3     | Mail destination record. Specifies the mail exchange servers for a domain. (Obsolete - use MX)           |
-| MF          | 4     | Mail forwarder record. Specifies the mail forwarders for a domain. (Obsolete - use MX)                  |
-| CNAME       | 5     | Canonical name record. Specifies an alias for a domain.                              |
-| SOA         | 6     | Start of authority record. Specifies the authoritative information about a domain.   |
-| MB          | 7     | Mailbox record. Specifies the host that handles mail for a domain.(EXPERIMENTAL)                   |
-| MG          | 8     | Mail group record. Specifies a mailbox that is a member of a mail group. (Experimental)             |
-| MR          | 9     | Mail rename record. Specifies a new name for a mailbox. (Experimental)                             |
-| NULL        | 10    | Null record. Reserved for future use. (Experimental)                                               |
-| WKS         | 11    | Well-known services record. Specifies the well-known services supported by a domain. |
-| PTR         | 12    | Pointer record. Specifies a domain name that points to another domain.               |
-| HINFO       | 13    | Host information record. Specifies the host CPU and operating system.                |
-| MINFO       | 14    | Mailbox information record. Specifies the mailbox and error mailbox for a domain.    |
-| MX          | 15    | Mail exchange record. Specifies the mail exchange servers for a domain.              |
-| TXT         | 16    | Text record. Specifies text information.                                             |
-| AXFR        | 252   | Request for a transfer of an entire zone.                                            |
-| MAILB       | 253   | Request for mailbox-related records.                                                 |
-| MAILA       | 254   | Request for mail agent-related records. (Obsolete - see MX)                                             |
-| \*          | 255   | Request for all records.                                                             |
-
+| Record Type | Value | Description                                                                                    |
+| ----------- | ----- | ---------------------------------------------------------------------------------------------- |
+| A           | 1     | Address record. Maps a domain name to an IPv4 address.                                         |
+| NS          | 2     | Name server record. Specifies the authoritative name servers for a domain.                     |
+| MD          | 3     | Mail destination record. Specifies the mail exchange servers for a domain. (Obsolete - use MX) |
+| MF          | 4     | Mail forwarder record. Specifies the mail forwarders for a domain. (Obsolete - use MX)         |
+| CNAME       | 5     | Canonical name record. Specifies an alias for a domain.                                        |
+| SOA         | 6     | Start of authority record. Specifies the authoritative information about a domain.             |
+| MB          | 7     | Mailbox record. Specifies the host that handles mail for a domain.(EXPERIMENTAL)               |
+| MG          | 8     | Mail group record. Specifies a mailbox that is a member of a mail group. (Experimental)        |
+| MR          | 9     | Mail rename record. Specifies a new name for a mailbox. (Experimental)                         |
+| NULL        | 10    | Null record. Reserved for future use. (Experimental)                                           |
+| WKS         | 11    | Well-known services record. Specifies the well-known services supported by a domain.           |
+| PTR         | 12    | Pointer record. Specifies a domain name that points to another domain.                         |
+| HINFO       | 13    | Host information record. Specifies the host CPU and operating system.                          |
+| MINFO       | 14    | Mailbox information record. Specifies the mailbox and error mailbox for a domain.              |
+| MX          | 15    | Mail exchange record. Specifies the mail exchange servers for a domain.                        |
+| TXT         | 16    | Text record. Specifies text information.                                                       |
+| AXFR        | 252   | Request for a transfer of an entire zone.                                                      |
+| MAILB       | 253   | Request for mailbox-related records.                                                           |
+| MAILA       | 254   | Request for mail agent-related records. (Obsolete - see MX)                                    |
+| \*          | 255   | Request for all records.                                                                       |
 
 Not to sidetrack the conversation, but I found the `DNS ANY (*)` and HINFO records particularly interesting, so I decided to take a look at the latest version of the RFC, [RFC 8482](https://www.rfc-editor.org/rfc/rfc8482). This RFC deprecates the DNS ANY record, which previously allowed clients to request all records associated with a domain—a feature that was often misused and created unnecessary load on DNS servers.
 
@@ -206,8 +205,6 @@ dig ANY facebook.com @1.1.1.1
 ```
 
 Cloudflare’s approach is to respond with a `NOTIMP` (Not Implemented) status code, indicating that the resolver does not support the `ANY` record type.
-
-
 
 ### DNS Format Limits
 
