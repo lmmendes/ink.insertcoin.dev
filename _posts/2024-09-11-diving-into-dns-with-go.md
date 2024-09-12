@@ -167,7 +167,8 @@ Interestingly, different DNS resolvers have unique approaches to handling this d
 ```shell
 dig ANY facebook.com @8.8.8.8
 ```
-````text
+
+```text
 ; <<>> DiG 9.10.6 <<>> ANY facebook.com @8.8.8.8
 ;; global options: +cmd
 ;; Got answer:
@@ -219,6 +220,3 @@ The DNS protocol has a few limitations that impact domain usage, as detailed in 
 ## Implementing DNS Protocol with Go
 
 Now that we have a good understanding of the DNS protocol, let's implement a simple DNS server in Go. We will create a server that listens on a specific port and responds to A record queries for a specific domain.
-
-```go
-```
