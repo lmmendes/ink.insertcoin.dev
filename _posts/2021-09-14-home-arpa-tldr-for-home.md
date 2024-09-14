@@ -12,6 +12,8 @@ tags:
     - networking
     - tld
 author: Luis Mendes
+redirect_from:
+  - /news/home-arpa-tldr-for-home
 ---
 
 > **TLDR**: `.home.arp` is the special-use TLD that you should be using inside your private network according to [RFC 8375][rfc8375].
@@ -39,7 +41,7 @@ Long story short, DNS resolutions for `*.home.arpa` hosts will not be send to pu
 
 - I would suggest not using `.home`, `homenet`, `workgroup` or other "fake" domain name that comes to mind because of two possible issues:
   - a) If the DNS query can't be solved inside your network, the request will be forwared to a root DNS server leeking information of your internal network outside, while also adding a delay penalty for the resolution.
-  - b) [ICANN decided to delegate new TLDs][newtlds] to anyone who was willing to apply and pay the required fees,  this means that in the future anyone can register your internal domain and start using it has a root TLD, see what happend with the `.dev` domain that got bought by Google a couple years ago. 
+  - b) [ICANN decided to delegate new TLDs][newtlds] to anyone who was willing to apply and pay the required fees,  this means that in the future anyone can register your internal domain and start using it has a root TLD, see what happend with the `.dev` domain that got bought by Google a couple years ago.
 - I would suggest avoiding using a public registered domain or subdomain inside your home network, just to keep the overhead low, because this would mean that you need to update the public DNS server each time you had a device to your network (eg: Cloudflare or DynDNS), and this would also be leeking information about your home network.
 
 Sources:

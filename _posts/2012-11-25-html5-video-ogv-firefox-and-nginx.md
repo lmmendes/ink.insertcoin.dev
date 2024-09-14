@@ -13,6 +13,8 @@ tags:
   - html video
   - ogv
 author: Luis Mendes
+redirect_from:
+  - /news/html5-video-ogv-firefox-and-nginx
 ---
 If you are having problems serving `ogv` video content on Firefox there are some steps that you should follow.
 

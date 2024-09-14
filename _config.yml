@@ -8,12 +8,13 @@ sass:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from
 exclude:
   - .sass-cache
   - .jekyll-cache
   - .git
 
-permalink: /news/:slug
+permalink: /posts/:slug
 title: ink
 author: Luís Mendes
 email: luis@insertcoin.dev
