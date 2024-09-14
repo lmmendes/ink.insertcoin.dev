@@ -28,9 +28,15 @@ layout: default
     <li>
        my experiments:
        <ul>
-          <li><a href="https://github.com/lmmendes/game-boy-opcodes" target="_blank">game-boy-opcodes</a>: game boy cpu (sharp LR35902) instruction set (opcodes)</li>
-          <li><a href="https://github.com/lmmendes/chip8-rb" target="_blank">chip8-rb</a>: A chip 8 interpreter in ruby (wip)</li>
+          <li>
+            <a href="https://github.com/lmmendes/game-boy-opcodes" target="_blank">game-boy-opcodes</a>: game boy cpu (sharp LR35902) <a href="https://gb.insertcoin.dev/">instruction set (opcodes)</a>
+          </li>
+          <!--
+          <li>
+            <a href="https://github.com/lmmendes/chip8-rb" target="_blank">
+            chip8-rb</a>: A chip 8 interpreter in ruby (wip)</li>
           <li><a href="https://github.com/lmmendes/okada" target="_blank">okada</a>: A work in progress to try to implement a Game Boy emulator in Ruby.</li>
+          -->
        </ul>
     </li>
     <li>
