@@ -29,8 +29,9 @@ google_analytics: G-S86K5Z69JJ
 
 theme_config:
   twitter_username: lmmendes
-  github_username:  lmmendes
+  github_username: lmmendes
   linkedin_username: lmmendes
+  mastodon_username: lmmendes
   base_domain_url: insertcoin.dev
   back_home_text: "&larr;" # customize text for homepage link in post layout
   date_format: "%Y-%m-%d" # customize how date is formatted

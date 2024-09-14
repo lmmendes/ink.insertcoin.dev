@@ -8,7 +8,8 @@ layout: default
     <li>
       <a href="{{ 'https://github.com/' | append: site.theme_config.github_username }}">github</a> /
       <a href="{{ 'https://linkedin.com/in/' | append: site.theme_config.linkedin_username }}">linkedin</a> /
-      <a href="{{ 'https://twitter.com/' | append: site.theme_config.twitter_username }}">twitter</a>
+      <a href="{{ 'https://twitter.com/' | append: site.theme_config.twitter_username }}">twitter</a> /
+      <a href="{{ 'https://mastodon.social/@' | append: site.theme_config.mastodon_username }}">mastodon</a>
     </li>
     <li>
       find me: luis @ `{{ site.theme_config.base_domain_url }}`
