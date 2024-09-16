@@ -3,7 +3,7 @@ layout: default
 ---
  <ul>
     <li>
-       <p>platform tech lead @ <a href="https://mercedes-benz.io">mercedes-benz.io</a></p>
+        platform tech lead @ <a href="https://mercedes-benz.io">mercedes-benz.io</a>
     </li>
     <li>
       <a href="{{ 'https://github.com/' | append: site.theme_config.github_username }}">github</a> /
@@ -12,7 +12,7 @@ layout: default
       <a href="{{ 'https://mastodon.social/@' | append: site.theme_config.mastodon_username }}">mastodon</a>
     </li>
     <li>
-      find me: luis @ `{{ site.theme_config.base_domain_url }}`
+      find me at luis @ `{{ site.theme_config.base_domain_url }}`
     </li>
  </ul>
  <ul>
