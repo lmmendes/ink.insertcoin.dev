@@ -79,7 +79,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.17)
   jekyll-seo-tag
   jekyll-sitemap
-  kramdown-parser-gfm
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.2.0)
