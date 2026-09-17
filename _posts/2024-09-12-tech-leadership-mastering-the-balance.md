@@ -10,6 +10,7 @@ tags:
     - management
     - growth
 author: Luis Mendes
+published: false
 ---
 High-demand roles that combine deep technical skills with significant management responsibilities often seem like the pinnacle of professional achievement. But if you're in one of these roles, you know the reality can be far more complex and taxing. The relentless commitment required can quickly become a double-edged sword, threatening your personal growth and satisfaction if left unchecked.
 
